@@ -8,7 +8,7 @@
                     <div class="col-lg-3 col-md-3 col-12">
                         <!-- Start Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="{{ asset('assets/img/logo.png') }}" alt="#"></a>
+                            <a href="{{ route('archives.index') }}"><img src="{{ asset('assets/img/logo.png') }}" alt="#"></a>
                         </div>
                         <!-- End Logo -->
                         <!-- Mobile Nav -->
@@ -20,9 +20,9 @@
                         <div class="main-menu">
                             <nav class="navigation">
                                 <ul class="nav menu">
-                                    <li class="active"><a href="#">Acceuil</a>
+                                    <li class="{{ request()->routeIs('archives.index') ? 'active' : '' }}"><a href="{{ route('archives.index') }}">Acceuil</a>
                                     </li>
-                                    <li><a href="#">Laravel </a></li>
+                                    <li class="{{ request()->routeIs('archives.laravel') ? 'active' : '' }}"><a href="{{ route('archives.laravel') }}">Laravel</a></li>
                                     <li><a href="#">HTML</a></li>
                                     <li><a href="contact.html">CSS</a></li>
                                 </ul>

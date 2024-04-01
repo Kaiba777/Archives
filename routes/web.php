@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.index');
-});
+Route::get('/', [AdminController::class, 'index'])->name('archives.index');
+Route::get('/laravel', [AdminController::class, 'archivesLaravel'])->name('archives.laravel');
+
