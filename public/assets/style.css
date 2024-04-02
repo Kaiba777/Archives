@@ -59,7 +59,7 @@ body{
 	right: 15px;
 	padding: 10px 20px;
 	background: #fbb501;
-	color: #fff;
+	color: #fafaff;
 	font-size: 25px;
 	width: 45px;
 	height: 45px;
@@ -79,7 +79,7 @@ body{
 	z-index: 99998;
 	padding: 20px;
 	width: 245px;
-	background: #fff;
+	background: #fafaff;
 	right: -245px;
 	text-align: left;
 	top: 30%;
@@ -103,7 +103,7 @@ body{
 	border-radius: 5px 0 0 5px;
 	background: #fbb501;
 	text-align: center;
-	color: #fff !important;
+	color: #fafaff !important;
 	top: 0;
 	cursor: pointer;
 	box-shadow: -4px 0px 5px #00000036;
@@ -174,7 +174,7 @@ body{
 	Start Header CSS 
 =====================*/
 .header{
-	background-color:#fff;
+	background-color:#fafaff;
 	position:relative;
 }
 .header .navbar-collapse{
@@ -220,7 +220,7 @@ body{
 	margin-right:8px;
 }
 .header .header-inner {
-	background:#fff;
+	background:#fafaff;
 	z-index:999;
 	width:100%;
 }
@@ -228,7 +228,7 @@ body{
 	margin-top:12px;
 }
 .get-quote .btn{
-	color:#fff;
+	color:#fafaff;
 }
 .header .logo {
 	float: left;
@@ -299,7 +299,7 @@ body{
 	margin-top:6px;
 }
 .header .middle-header {
-	background: #fff;
+	background: #fafaff;
 	padding: 20px 0px;
 }
 .header .widget-main{
@@ -329,7 +329,7 @@ body{
 	height: 40px;
 	width: 40px;
 	line-height: 40px;
-	color: #fff;
+	color: #fafaff;
 	background: #fbb501;
 	border-radius: 4px;
 	text-align: center;
@@ -348,7 +348,7 @@ body{
 }
 /* Dropdown Menu */
 .header .nav li .dropdown {
-	background: #fff;
+	background: #fafaff;
 	width: 220px;
 	position: absolute;
 	left:-20px;
@@ -404,7 +404,7 @@ body{
 	display: inline-block;
 }
 .header .right-bar a {
-	color: #fff;
+	color: #fafaff;
 	height: 35px;
 	width: 35px;
 	line-height: 35px;
@@ -415,7 +415,7 @@ body{
 	font-size: 12px;
 }
 .header .right-bar li a:hover{
-	color:#fff;
+	color:#fafaff;
 	background:#27AE60;
 }
 .header .search-top.active .search i:before{
@@ -453,7 +453,7 @@ body{
 	transition: all 0.4s ease;
 	border-radius: 3px;
 	border: none;
-	background: #fff;
+	background: #fafaff;
 	color: #020024;
 }
 .header .search-form button {
@@ -464,12 +464,12 @@ body{
 	width: 50px;
 	background: #fbb501;
 	border: none;
-	color: #fff;
+	color: #fafaff;
 	border-radius: 0 4px 4px 0;
 	border-left:1px solid transparent;
 }
 .header .search-form button:hover{
-	background:#fff;
+	background:#fafaff;
 	color:#fbb501;
 	border-color:#e6e6e6;
 }
@@ -525,7 +525,7 @@ body{
 	margin-top:30px;
 }
 .slider .single-slider .btn{
-	color:#fff;
+	color:#fafaff;
 	background:#fbb501;
 	font-weight:500;
 	display:inline-block;
@@ -537,7 +537,7 @@ body{
 }
 .slider .single-slider .btn.primary{
 	background:#020024;
-	color:#fff;
+	color:#fafaff;
 }
 .slider .single-slider .btn.primary:before{
 	background:#fbb501;
@@ -555,7 +555,7 @@ body{
 	line-height: 50px;
 	text-align: center;
 	background: #fbb501;
-	color: #fff;
+	color: #fafaff;
 	font-size: 26px;
 	position: absolute;
 	margin: 0;
@@ -567,7 +567,7 @@ body{
 }
 .slider .owl-carousel .owl-nav div:hover{
 	background:#020024;
-	color:#fff;
+	color:#fafaff;
 }
 .slider .owl-carousel .owl-controls .owl-nav .owl-prev{
 	left:20px;
@@ -594,7 +594,7 @@ body{
 	Start Schedule CSS
 ===============================*/
 .schedule {
-	background: #fff;
+	background: #fafaff;
 	margin: 0;
 	padding: 0;
 	height: 230px;
@@ -650,7 +650,7 @@ body{
 .schedule .single-schedule .icon i{
 	position: absolute;
 	font-size: 110px;
-	color: #fff;
+	color: #fafaff;
 	 -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     -ms-transition: all .3s ease-out 0s;
@@ -664,22 +664,22 @@ body{
 }
 .schedule .single-schedule span{
 	display:block;
-	color:#fff;
+	color:#fafaff;
 }
 .schedule .single-schedule h4{
 	font-size: 20px;
 	font-weight:600;
 	display:inline-block;
 	text-transform:capitalize;
-	color:#fff;
+	color:#fafaff;
 	margin-top:13px;
 }
 .schedule .single-schedule p{
-	color:#fff;
+	color:#fafaff;
 	margin-top:22px;
 }
 .schedule .single-schedule a {
-	color: #fff;
+	color: #fafaff;
 	margin-top: 25px;
 	font-weight: 500;
 	display: inline-block;
@@ -692,7 +692,7 @@ body{
 	bottom:0;
 	height:1px;
 	width:0%;
-	background:#fff;
+	background:#fafaff;
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
@@ -713,7 +713,7 @@ body{
 }
 .schedule .single-schedule .time-sidual li {
 	display: block;
-	color: #fff;
+	color: #fafaff;
 	width: 100%;
 	margin-bottom:3px;
 }
@@ -770,7 +770,7 @@ body{
 	line-height:15px;
 	text-align:center;
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 	font-size:14px;
 	border-radius:100%;
 	padding-left:2px;
@@ -778,7 +778,7 @@ body{
 }
 /* Start Faq CSS */
 .why-choose{
-	background:#fff;
+	background:#fafaff;
 }
 .why-choose .choose-right{
 	height:100%;
@@ -790,7 +790,7 @@ body{
 	position:relative;
 }
 .why-choose .choose-right .video {
-	color: #fff;
+	color: #fafaff;
 	height: 70px;
 	width: 70px;
 	line-height: 70px;
@@ -812,7 +812,7 @@ body{
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	background: #fff;
+	background: #fafaff;
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	border-radius: 100%;
@@ -852,7 +852,7 @@ body{
 	height: 50px;
 	width: 50px;
 	line-height: 45px;
-	background: #fff;
+	background: #fafaff;
 	color: #fbb501;
 	position: absolute;
 	margin: 0;
@@ -865,7 +865,7 @@ body{
 	box-shadow: 0px 0px 10px #0000001a;
 }
 .pf-details .image-slider .owl-carousel .owl-nav div:hover{
-	color:#fff;
+	color:#fafaff;
 	background:#fbb501;
 }
 .pf-details .image-slider .owl-carousel .owl-controls .owl-nav .owl-prev{
@@ -893,7 +893,7 @@ body{
 }
 .pf-details .date ul li{
 	font-size:16px;
-	color:#fff;
+	color:#fafaff;
 	display:inline-block;
 	margin-right:60px;
 }
@@ -945,7 +945,7 @@ body{
 	border-radius:50%;
 }
 .pf-details .body-text .share ul li a:hover{
-	color:#fff;
+	color:#fafaff;
 	border-color:transparent;
 	background:#fbb501;
 }
@@ -1011,7 +1011,7 @@ body{
 	line-height: 26px;
 	position: relative;
 	margin-bottom: 20px;
-	color: #fff;
+	color: #fafaff;
 }
 .services-details-img blockquote i {
   position: absolute;
@@ -1064,12 +1064,12 @@ body{
 	position:relative;
 }
 .testimonials .section-title h2{
-	color:#fff;
+	color:#fafaff;
 }
 .testimonials .single-testimonial {
 	text-align: left;
 	position: relative;
-	background: #fff;
+	background: #fafaff;
 	padding: 40px 30px;
 	margin: 5px;
 	margin-bottom: 27px;
@@ -1130,14 +1130,14 @@ body{
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	margin: 0;
-	background: #fff;
+	background: #fafaff;
 	position: relative;
 }
 .testimonials .owl-dots .owl-dot span:hover{
-	background:#fff;
+	background:#fafaff;
 }
 .testimonials .owl-dots .owl-dot.active span{
-	background:#fff;
+	background:#fafaff;
 	width:20px;
 }
 /*=============================
@@ -1167,7 +1167,7 @@ body{
 	color:#fbb501;
 }
 .departments .department-tab .nav li a {
-	color: #fff;
+	color: #fafaff;
 	margin-top: 20px;
 	border: none;
 	padding: 0;
@@ -1237,7 +1237,7 @@ body{
 	height: 15px;
 	width: 15px;
 	line-height: 15px;
-	color: #fff;
+	color: #fafaff;
 	background: #fbb501;
 	text-align: center;
 	border-radius: 100%;
@@ -1292,16 +1292,16 @@ body{
 	position:relative;
 }
 .team.single-page{
-	background:#fff;
+	background:#fafaff;
 }
 .team .section-title h2{
-	color:#fff;
+	color:#fafaff;
 }
 .team .section-title p{
-	color:#fff;
+	color:#fafaff;
 }
 .team .single-team {
-	background: #fff;
+	background: #fafaff;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
@@ -1321,7 +1321,7 @@ body{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: #fafaff;
 	opacity:0;
 	visibility:hidden;
 	content: "";
@@ -1349,7 +1349,7 @@ body{
 	visibility: hidden;
 	font-weight: 400;
 	text-align: center;
-	color: #fff;
+	color: #fafaff;
 	border-radius: 0;
 	-webkit-transform: scale(0.6);
 	-moz-transform: scale(0.6);
@@ -1461,7 +1461,7 @@ body{
 	font-size: 16px;
 }
 .doctor-details-area .doctor-details-left .social li a:hover{
-	color:#fff;
+	color:#fafaff;
 	background:#fbb501;
 	border-color:transparent;
 }
@@ -1539,14 +1539,14 @@ body{
 
 /* Blog Sidebar */
 .main-sidebar {
-	background: #fff;
+	background: #fafaff;
 	margin-top: 30px;
 	background: transparent;
 }
 .main-sidebar .single-widget {
 	margin-bottom: 30px;
 	padding: 40px;
-	background: #fff;
+	background: #fafaff;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
@@ -1559,7 +1559,7 @@ body{
 	text-transform: capitalize;
 	margin-bottom: 30px;
 	display: block;
-	background: #fff;
+	background: #fafaff;
 	padding-left: 12px;
 }
 .main-sidebar .single-widget .title::before {
@@ -1606,7 +1606,7 @@ body{
 	text-align: center;
 	border: none;
 	font-size: 14px;
-	color: #fff;
+	color: #fafaff;
 	background: #333;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -1615,7 +1615,7 @@ body{
 }
 .main-sidebar .search .button:hover {
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 }
 /* Category List */
 .main-sidebar .categor-list {
@@ -1712,7 +1712,7 @@ body{
 	margin-bottom: 20px;
 }
 .main-sidebar .side-tags .tag li a {
-	background: #fff;
+	background: #fafaff;
 	color: #333;
 	padding: 8px 14px;
 	text-transform: capitalize;
@@ -1722,7 +1722,7 @@ body{
 	border-radius: 4px;
 }
 .main-sidebar .side-tags .tag a:hover{
-	color:#fff;
+	color:#fafaff;
 	background:#fbb501;
 	border-color:transparent;
 }
@@ -1733,7 +1733,7 @@ body{
 }
 .news-single .single-main {
 	margin-top: 30px;
-	background: #fff;
+	background: #fafaff;
 	padding: 30px;
 	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
 	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
@@ -1758,7 +1758,7 @@ body{
 }
 /* Blog Meta */
 .news-single{
-	background:#fff;
+	background:#fafaff;
 }
 .news-single .meta {
 	overflow: hidden;
@@ -1840,7 +1840,7 @@ body{
 	opacity: 0.9;
 }
 .news-single .news-text blockquote p {
-	color: #fff;
+	color: #fafaff;
 	margin: 0;
 	line-height: 26px;
 	font-size: 15px;
@@ -1877,7 +1877,7 @@ body{
 .news-single .social-share li a {
 	padding: 10px 20px;
 	display: block;
-	color: #fff;
+	color: #fafaff;
 }
 .news-single .social-share li a:hover{
 	background:#2B343E;
@@ -1906,7 +1906,7 @@ body{
 	border-radius: 4px;
 }
 .news-single .prev-next li a:hover{
-	color:#fff;
+	color:#fafaff;
 	background:#fbb501;
 	border-color:transparent;
 }
@@ -1933,7 +1933,7 @@ body{
 .news-single .single-comments {
 	overflow: hidden;
 	margin-bottom: 30px;
-	background: #fff;
+	background: #fafaff;
 	border-bottom: 1px solid #eee;
 	padding-bottom: 30px;
 }
@@ -2021,17 +2021,17 @@ body{
 	text-transform: capitalize;
 	font-size: 13px;
 	font-weight: 400;
-	color: #fff;
+	color: #fafaff;
 	padding: 3px 15px;
 	display: inline-block;
 	margin-top: 10px;
 	border-radius: 4px;
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 }
 .news-single .single-comments a:hover{
 	background:#020024;
-	color:#fff;
+	color:#fafaff;
 }
 .news-single .single-comments a i{
 	margin-right:5px;
@@ -2126,7 +2126,7 @@ body{
 	text-transform: uppercase;
 	display: block;
 	border: 0px solid;
-	color: #fff;
+	color: #fafaff;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -2139,7 +2139,7 @@ body{
 .news-single .form-group .button i{
 	position:relative;
 	display:inline-block;
-	color:#fff;
+	color:#fafaff;
 	margin-right:10px;
 	padding:0px;
 }
@@ -2148,15 +2148,15 @@ body{
 	text-align: left;
 }
 .news-single .form-group.button .btn{
-	background:#fff;
+	background:#fafaff;
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 }
 .news-single .form-group.button .btn:hover{
-	color:#fff;
+	color:#fafaff;
 }
 .news-single .form-group.button .btn i {
-	color: #fff;
+	color: #fafaff;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -2173,12 +2173,12 @@ body{
 	Start Appointment CSS
 ============================*/
 .appointment{
-	background:#fff;
+	background:#fafaff;
 	padding-top:100px;
 	padding-bottom: 50px;
 }
 .appointment.single-page {
-	background: #fff;
+	background: #fafaff;
 	padding-top: 100px 0;
 	padding: 0;
 	padding: 100px 0;
@@ -2250,7 +2250,7 @@ body{
 	font-weight:400;
 }
 .appointment .form-group .list li:hover {
-	color:#fff;
+	color:#fafaff;
 	background: #fbb501;
 }
 .appointment .appointment-image{}
@@ -2261,7 +2261,7 @@ body{
 	font-weight:500;
 }
 .appointment .button .btn:hover{
-	color:#fff;
+	color:#fafaff;
 }
 .appointment .form p{
 	margin-top: 10px;
@@ -2278,7 +2278,7 @@ body{
 	display: block;
 	font-weight:600;
 	margin-bottom: 20px;
-	color:#fff;
+	color:#fafaff;
 }
 .appointment.single-page .time-sidual{
 	margin-top:15px;
@@ -2288,7 +2288,7 @@ body{
 }
 .appointment.single-page .time-sidual li {
 	display: block;
-	color: #fff;
+	color: #fafaff;
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -2384,13 +2384,13 @@ body{
 .login .form .btn {
 	display: inline-block;
 	margin-right: 10px;
-	color: #fff;
+	color: #fafaff;
 	line-height: 20px;
 	width:100%;
 }
 .login .form .btn:hover{
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 }
 .login .login-form .checkbox {
 	text-align: left;
@@ -2539,13 +2539,13 @@ body{
 .register .form .btn {
 	display: inline-block;
 	margin-right: 10px;
-	color: #fff;
+	color: #fafaff;
 	line-height: 20px;
 	width:100%;
 }
 .register .form .btn:hover{
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 }
 .register .register-form .checkbox {
 	text-align: left;
@@ -2645,12 +2645,12 @@ body{
 	font-weight: 400;
 	padding: 15px 0 15px 18px;
 	border-radius: 0;
-	background: #fff;
+	background: #fafaff;
 	color: #333;
 	border: 1px solid #eee;
 }
 .accordion a:hover {
-  color:#fff !important;
+  color:#fafaff !important;
   background:#fbb501 !important;
 }
 .accordion a:after {
@@ -2663,7 +2663,7 @@ body{
   font-weight: 700;
 }
 .accordion a:hover:after {
-  color: #fff !important;
+  color: #fafaff !important;
 }
 .accordion li {
   position: relative;
@@ -2677,14 +2677,14 @@ body{
   margin-bottom: 0;
 }
 .accordion li a.active {
-  color: #ffffff;
+  color: #fafafffff;
   background-color: #fbb501;
   border: 1px solid #fbb501;
 }
 .accordion li a.active:after {
   content: "-";
   font-size: 25px;
-  color: #ffffff;
+  color: #fafafffff;
 }
 /*=====================
    End Faq CSS
@@ -2769,13 +2769,13 @@ body{
 .contact-us .form .btn {
 	display: inline-block;
 	margin-right: 10px;
-	color: #fff;
+	color: #fafaff;
 	line-height: 20px;
 	width:100%;
 }
 .contact-us .form .btn:hover{
 	background:#fbb501;
-	color:#fff;
+	color:#fafaff;
 }
 .contact-us .contact-us-form .checkbox {
 	text-align: left;
@@ -2872,7 +2872,7 @@ body{
 }
 .contact-us .single-info i{
 	font-size:42px;
-	color:#fff;
+	color:#fafaff;
 	position:absolute;
 	left:40px;
 }
@@ -2880,13 +2880,13 @@ body{
 	margin-left: 45px;
 }
 .contact-us .single-info .content h3{
-	color:#fff;
+	color:#fafaff;
 	font-size:18px;
 	font-weight:600;
 	
 }
 .contact-us .single-info .content p{
-	color:#fff;
+	color:#fafaff;
 	margin-top:5px;
 }
 /* Google Map */
@@ -2903,7 +2903,7 @@ body{
 ==========================*/ 
 .error-page {
 	text-align: center;
-	background: #fff;
+	background: #fafaff;
 	border-top: 1px solid #eee;
 }
 .error-page .error-inner {
@@ -2966,7 +2966,7 @@ body{
 =============================*/ 
 .mail-seccess {
 	text-align: center;
-	background: #fff;
+	background: #fafaff;
 	border-top: 1px solid #eee;
 }
 .mail-seccess .success-inner {
@@ -2990,7 +2990,7 @@ body{
 	padding: 20px 15px;
 }
 .mail-seccess .success-inner .btn{
-	color:#fff;
+	color:#fafaff;
 }
 /*===========================
 	End Mail Success CSS
@@ -3005,7 +3005,7 @@ body{
   z-index: 1;
 }
 .doctor-calendar-table {
-  background-color: #ffffff;
+  background-color: #fafafffff;
   -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
           box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
 }
@@ -3017,7 +3017,7 @@ body{
   text-align: center;
   background-color: #fbb501;
   border: none;
-  color: #ffffff;
+  color: #fafafffff;
   text-transform: uppercase;
   white-space: nowrap;
   font-size: 16px;
@@ -3077,13 +3077,13 @@ body{
   border-color: #fbb501;
 }
 .doctor-calendar-table table tbody tr td:hover h3 {
-  color: #ffffff;
+  color: #fafafffff;
 }
 .doctor-calendar-table table tbody tr td:hover span {
-  color: #ffffff;
+  color: #fafafffff;
 }
 .doctor-calendar-table table tbody tr td:hover span.time {
-  background-color: #ffffff;
+  background-color: #fafafffff;
   color: #fbb501;
 }
 .doctor-calendar-table table tbody tr:last-child td {
@@ -3162,7 +3162,7 @@ body{
 }
 .about-content ul li:hover i {
   background-color: #fbb501;
-  color: #ffffff;
+  color: #fafafffff;
 }
 .about-content ul li:last-child {
   margin-bottom: 0;
@@ -3178,7 +3178,7 @@ body{
 }
 .single-vision-box {
   margin-bottom: 30px;
-  background-color: #ffffff;
+  background-color: #fafafffff;
   -webkit-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
           box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
   padding: 25px 20px;
@@ -3196,7 +3196,7 @@ body{
   line-height: 60px;
   border-radius: 100%;
   background-color: #fbb501;
-  color: #ffffff;
+  color: #fafafffff;
   font-size: 25px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -3232,7 +3232,7 @@ body{
   position: absolute;
   width: 100px;
   height: 100px;
-  border: 10px solid #ffffff;
+  border: 10px solid #fafafffff;
   left: -80px;
   bottom: -80px;
   border-radius: 50%;
@@ -3249,14 +3249,14 @@ body{
   width: 100%;
 }
 .single-vision-box:hover .icon {
-  background-color: #fff;
+  background-color: #fafaff;
   color: #fbb501;
 }
 .single-vision-box:hover h3 {
-  color: #ffffff;
+  color: #fafafffff;
 }
 .single-vision-box:hover p {
-  color: #ffffff;
+  color: #fafafffff;
 }
 .single-vision-box:hover::after {
   left: -50px;
@@ -3352,7 +3352,7 @@ body{
 }
 .our-mission-content ul li:hover .icon {
   background-color: #fbb501;
-  color: #ffffff;
+  color: #fafafffff;
   border-radius: 100%;
 }
 /* End Our Mission CSS */
