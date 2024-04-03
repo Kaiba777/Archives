@@ -15,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [AdminController::class, 'index'])->name('archives.index');
+
 Route::get('/laravel', [AdminController::class, 'archivesLaravel'])->name('archives.laravel');
 Route::get('/laravel/{slug}-{laravel}', [AdminController::class, 'archivesDetailLaravel'])->name('archives.laravel.detail')->where([
     'slug' => '[0-9a-z\-]+',
     'laravel' => '[0-9]+'
 ]);
+
+Route::get('/livewire', [AdminController::class, 'archivesLivewires'])->name('archives.livewire');
+
 
 

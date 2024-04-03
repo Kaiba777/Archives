@@ -78,9 +78,9 @@
 										<i class="fa fa-ambulance"></i>
 									</div>
 									<div class="single-content">
-										<h4>Emergency Cases</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+										<h4>Laravel</h4>
+										<p>Laravel est un framework PHP multi-plateforme permettant de créer des applications web.</p>
+										<a href="{{ route('archives.laravel') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -93,10 +93,9 @@
 										<i class="icofont-prescription"></i>
 									</div>
 									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+										<h4>Livewire</h4>
+										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
+										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>

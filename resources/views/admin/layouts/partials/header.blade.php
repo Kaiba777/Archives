@@ -23,7 +23,7 @@
                                     <li class="{{ request()->routeIs('archives.index') ? 'active' : '' }}"><a href="{{ route('archives.index') }}">Acceuil</a>
                                     </li>
                                     <li class="{{ request()->routeIs('archives.laravel') ? 'active' : '' }}"><a href="{{ route('archives.laravel') }}">Laravel</a></li>
-                                    <li class="{{ request()->routeIs('archives.laravel') ? 'active' : '' }}"><a href="{{ route('archives.laravel') }}">Livewire</a></li>
+                                    <li class="{{ request()->routeIs('archives.livewire') ? 'active' : '' }}"><a href="{{ route('archives.livewire') }}">Livewire</a></li>
                                     <li><a href="#">HTML</a></li>
                                     <li><a href="contact.html">CSS</a></li>
                                 </ul>
