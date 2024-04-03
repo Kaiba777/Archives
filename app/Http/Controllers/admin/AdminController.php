@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Laravel;
-use Illuminate\Http\Request;
+use App\Models\Livewire;
+use Illuminate\Support\Facades\URL;
+use App\Http\Controllers\Controller;
+use App\Models\Javascript;
 
 class AdminController extends Controller
 {
@@ -23,9 +25,11 @@ class AdminController extends Controller
 
     // Affiche les details spécifiques d'une archive consernant laravel
     public function archivesDetailLaravel(string $slug, Laravel $laravel) {
+
         $expectedSlug = $laravel->getSlug();
+
         if($slug != $expectedSlug) {
-            return to_route('archives.laravel.detail', ['slug' => $expectedSlug, 'id' => $laravel->id]);
+            return to_route('archives.laravel');
         }
         return view('admin.detail',[
             'laravel' => $laravel
@@ -33,6 +37,31 @@ class AdminController extends Controller
     }
 
     public function archivesLivewires() {
-        return view('admin.livewire');
+        $archivesLivewires = Livewire::all();
+        return view('admin.livewire', [
+            'archivesLivewires' => $archivesLivewires
+        ]);
+    }
+
+    public function archivesDetailLivewire(string $slug, Livewire $livewire) {
+
+        $expectedSlug = $livewire->getSlug();
+
+        if($slug != $expectedSlug) {
+            return to_route( 'archives.livewire');
+        }
+
+        return view('admin.detail', [
+            'livewire' => $livewire
+        ]);
+    }
+
+    // Affiche tous les archives consernant Javascript
+    public function archivesJavascript() {
+        
+        $archivesJavascript = Javascript::all();
+        return view('admin.javascript', [
+            'archivesJavascript' => $archivesJavascript
+        ]);
     }
 }

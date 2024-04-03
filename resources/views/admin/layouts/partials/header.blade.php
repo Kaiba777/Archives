@@ -24,8 +24,9 @@
                                     </li>
                                     <li class="{{ request()->routeIs('archives.laravel') ? 'active' : '' }}"><a href="{{ route('archives.laravel') }}">Laravel</a></li>
                                     <li class="{{ request()->routeIs('archives.livewire') ? 'active' : '' }}"><a href="{{ route('archives.livewire') }}">Livewire</a></li>
-                                    <li><a href="#">HTML</a></li>
-                                    <li><a href="contact.html">CSS</a></li>
+                                    <li class="{{ request()->routeIs('archives.javascript') ? 'active' : '' }}"><a href="{{ route('archives.javascript') }}">Javascript</a></li>
+                                    <li><a href="">HTML</a></li>
+                                    <li><a href="">CSS</a></li>
                                 </ul>
                             </nav>
                         </div>

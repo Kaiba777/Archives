@@ -1,4 +1,4 @@
-@section('title', 'Details de laravel')
+@section('title', 'Detail de laravel')
 
 @section('content')
     <div class="d-flex justify-content-center" style="height: 300px; background: #020024">

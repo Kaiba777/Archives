@@ -100,22 +100,47 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-12 col-12">
+						<div class="col-lg-4 col-md-6 col-12">
 							<!-- single-schedule -->
-							<div class="single-schedule last">
+							<div class="single-schedule middle">
 								<div class="inner">
 									<div class="icon">
-										<i class="icofont-ui-clock"></i>
+										<i class="icofont-prescription"></i>
 									</div>
 									<div class="single-content">
-										<span>Donec luctus</span>
-										<h4>Opening Hours</h4>
-										<ul class="time-sidual">
-											<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-											<li class="day">Saturday <span>9.00-18.30</span></li>
-											<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-										</ul>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+										<h4>Javascript</h4>
+										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
+										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<h4>HTML</h4>
+										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
+										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<h4>CSS</h4>
+										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
+										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
