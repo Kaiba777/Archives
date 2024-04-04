@@ -4,8 +4,8 @@ namespace App\Http\Controllers\admin;
 
 use App\Models\Laravel;
 use App\Models\Livewire;
-use Illuminate\Support\Facades\URL;
 use App\Http\Controllers\Controller;
+use App\Models\HTML;
 use App\Models\Javascript;
 
 class AdminController extends Controller
@@ -36,6 +36,7 @@ class AdminController extends Controller
         ]);
     }
 
+    // Affiche tous les archives consernant livewire 
     public function archivesLivewires() {
         $archivesLivewires = Livewire::all();
         return view('admin.livewire', [
@@ -43,6 +44,7 @@ class AdminController extends Controller
         ]);
     }
 
+    // Affiche les details spécifiques d'une archive consernant livewire
     public function archivesDetailLivewire(string $slug, Livewire $livewire) {
 
         $expectedSlug = $livewire->getSlug();
@@ -62,6 +64,43 @@ class AdminController extends Controller
         $archivesJavascript = Javascript::all();
         return view('admin.javascript', [
             'archivesJavascript' => $archivesJavascript
+        ]);
+    }
+
+    // Affiche les details spécifiques d'une archive consernant Javascript
+    public function archivesDetailJavascript(string $slug, Javascript $javascript) {
+
+        $expectedSlug = $javascript->getSlug();
+
+        if($slug != $expectedSlug) {
+            return to_route( 'archives.javascript');
+        }
+
+        return view('admin.detail', [
+            'javascript' => $javascript
+        ]);
+    }
+
+    // Affiche tous les archives consernant livewire 
+    public function archivesHtml() {
+
+        $archiveshtmls = HTML::all();
+        return view('admin.html', [
+            'archiveshtmls' => $archiveshtmls
+        ]);
+    }
+
+    // Affiche les details spécifiques d'une archive consernant Javascript
+    public function archivesDetailHtml(string $slug, HTML $html) {
+
+        $expectedSlug = $html->getSlug();
+
+        if($slug != $expectedSlug) {
+            return to_route( 'archives.javascript');
+        }
+
+        return view('admin.detail', [
+            'html' => $html
         ]);
     }
 }

@@ -109,8 +109,8 @@
 									</div>
 									<div class="single-content">
 										<h4>Javascript</h4>
-										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
-										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
+										<p>JavaScript (souvent abrégé en « JS ») est un langage de script léger, orienté objet, principalement connu comme le langage de script des pages web.</p>
+										<a href="{{ route('archives.javascript') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -124,8 +124,8 @@
 									</div>
 									<div class="single-content">
 										<h4>HTML</h4>
-										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
-										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
+										<p>L'HTML constitue le langage de bases d'un site internet. Il permet de définir la structure d'un document grâce à un système de balisage.</p>
+										<a href="{{ route('archives.html') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>

@@ -34,8 +34,17 @@ Route::get('/livewire/{slug}-{livewire}', [AdminController::class, 'archivesDeta
 
 // Route de Javascript
 Route::get('/javascript', [AdminController::class, 'archivesJavascript'])->name('archives.javascript');
+Route::get('/javascript/{slug}-{javascript}', [AdminController::class, 'archivesDetailJavascript'])->name('archives.javascript.detail')->where([
+    'slug' => $slug,
+    'javascript' => $id
+]);
 
-
+// Route de HTML
+Route::get('/html', [AdminController::class, 'archivesHtml'])->name('archives.html');
+Route::get('/html/{slug}-{html}', [AdminController::class, 'archivesDetailHtml'])->name('archives.html.detail')->where([
+    'slug' => $slug,
+    'html' => $id
+]);
 
 
 

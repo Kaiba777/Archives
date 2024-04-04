@@ -8,10 +8,18 @@
 @endphp
 
 @if ($previousPath == '/laravel')
-    @include('admin.shared.detaillaravel')
+    @include('admin.shared.detail_laravel')
 @endif
 
 @if ($previousPath == '/livewire')
-    @include('admin.shared.detaillivewire')
+    @include('admin.shared.detail_livewire')
+@endif
+
+@if ($previousPath == '/javascript')
+    @include('admin.shared.detail_javascript')
+@endif
+
+@if ($previousPath == '/html')
+    @include('admin.shared.detail_html')
 @endif
 

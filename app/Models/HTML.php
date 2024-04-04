@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Javascript extends Model
+class HTML extends Model
 {
     use HasFactory;
 
@@ -17,6 +17,6 @@ class Javascript extends Model
      */
     public function getSlug(): string
     {
-        return Str::slug($this->motCle);
+        return Str::slug($this->motsCle);
     }
 }
