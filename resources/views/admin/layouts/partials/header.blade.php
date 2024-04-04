@@ -26,7 +26,7 @@
                                     <li class="{{ request()->routeIs('archives.livewire') ? 'active' : '' }}"><a href="{{ route('archives.livewire') }}">Livewire</a></li>
                                     <li class="{{ request()->routeIs('archives.javascript') ? 'active' : '' }}"><a href="{{ route('archives.javascript') }}">Javascript</a></li>
                                     <li class="{{ request()->routeIs('archives.html') ? 'active' : '' }}"><a href="{{ route('archives.html') }}">HTML</a></li>
-                                    <li><a href="">CSS</a></li>
+                                    <li class="{{ request()->routeIs('archives.css') ? 'active' : '' }}"><a href="{{ route('archives.css') }}">CSS</a></li>
                                 </ul>
                             </nav>
                         </div>

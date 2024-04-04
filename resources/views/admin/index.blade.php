@@ -139,8 +139,8 @@
 									</div>
 									<div class="single-content">
 										<h4>CSS</h4>
-										<p>Livewire est une bibliothèque pour Laravel qui permet de créer des composants web dynamiques orientés serveur.</p>
-										<a href="{{ route('archives.livewire') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
+										<p>Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML.</p>
+										<a href="{{ route('archives.css') }}">voir plus<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
 							</div>

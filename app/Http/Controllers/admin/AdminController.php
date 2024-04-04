@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Models\Laravel;
 use App\Models\Livewire;
 use App\Http\Controllers\Controller;
+use App\Models\Css;
 use App\Models\HTML;
 use App\Models\Javascript;
 
@@ -101,6 +102,29 @@ class AdminController extends Controller
 
         return view('admin.detail', [
             'html' => $html
+        ]);
+    }
+
+    // Affiche tous les archives consernant css
+    public function archivesCss() {
+
+        $archivesCss = Css::all();
+        return view('admin.css', [
+            'archivesCss' => $archivesCss
+        ]);
+    }
+
+    // Affiche les details spécifiques d'une archive consernant Css
+    public function archivesDetailCss(string $slug, Css $css) {
+
+        $expectedSlug = $css->getSlug();
+
+        if($slug != $expectedSlug) {
+            return to_route( 'archives.css');
+        }
+
+        return view('admin.detail', [
+            'css' => $css
         ]);
     }
 }

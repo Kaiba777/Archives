@@ -23,3 +23,7 @@
     @include('admin.shared.detail_html')
 @endif
 
+@if ($previousPath == '/css')
+    @include('admin.shared.detail_css')
+@endif
+

@@ -46,5 +46,13 @@ Route::get('/html/{slug}-{html}', [AdminController::class, 'archivesDetailHtml']
     'html' => $id
 ]);
 
+// Route de Css
+Route::get('/css', [AdminController::class, 'archivesCss'])->name('archives.css');
+Route::get('/css/{slug}-{css}', [AdminController::class, 'archivesDetailCss'])->name('archives.css.detail')->where([
+    'slug' => $slug,
+    'css' => $id
+]);
+
+
 
 
