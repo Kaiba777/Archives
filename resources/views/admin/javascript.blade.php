@@ -32,4 +32,7 @@
 			</div>
 		</section>
 		<!--/End Start schedule Area -->
+        <div class="container my-4">
+            {{ $archivesJavascript->links() }}
+        </div>
 @endsection

@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Models\Laravel;
-use App\Models\Livewire;
-use App\Http\Controllers\Controller;
 use App\Models\Css;
 use App\Models\HTML;
+use App\Models\Laravel;
+use App\Models\Livewire;
 use App\Models\Javascript;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
@@ -16,11 +17,15 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
-    // Affiche tous les archives consernant laravel
-    public function archivesLaravel() {
-        $archivesLaravels = Laravel::all();
+    // Affiche tous les archives consernant laravel en les paginants
+    public function archivesLaravel(Request $request) {
+        $laravel = Laravel::query();
+
+        if ($recherche = $request->rechercher) {
+            $laravel->where('motsCle', 'like', '%' . $recherche . '%');
+        }
         return view('admin.laravel', [
-            'archivesLaravels' => $archivesLaravels
+            'archivesLaravels' => $laravel->paginate(10)
         ]);
     }
 
@@ -37,11 +42,15 @@ class AdminController extends Controller
         ]);
     }
 
-    // Affiche tous les archives consernant livewire 
-    public function archivesLivewires() {
-        $archivesLivewires = Livewire::all();
+    // Affiche tous les archives consernant livewire en les paginants
+    public function archivesLivewires(Request $request) {
+        $livewire = Livewire::query();
+
+        if ($recherche = $request->rechercher) {
+            $livewire->where('motsCle', 'like', '%' . $recherche . '%');
+        }
         return view('admin.livewire', [
-            'archivesLivewires' => $archivesLivewires
+            'archivesLivewires' => $livewire->paginate(10)
         ]);
     }
 
@@ -59,12 +68,15 @@ class AdminController extends Controller
         ]);
     }
 
-    // Affiche tous les archives consernant Javascript
-    public function archivesJavascript() {
-        
-        $archivesJavascript = Javascript::all();
+    // Affiche tous les archives consernant Javascript en les paginants
+    public function archivesJavascript(Request $request) {
+        $javascript = Javascript::query();
+
+        if ($recherche = $request->rechercher) {
+            $javascript->where('motCle', 'like', '%' . $recherche . '%');
+        }
         return view('admin.javascript', [
-            'archivesJavascript' => $archivesJavascript
+            'archivesJavascript' => $javascript->paginate(10)
         ]);
     }
 
@@ -82,16 +94,19 @@ class AdminController extends Controller
         ]);
     }
 
-    // Affiche tous les archives consernant livewire 
-    public function archivesHtml() {
+    // Affiche tous les archives consernant html en les paginant
+    public function archivesHtml(Request $request) {
+        $javascript = HTML::query();
 
-        $archiveshtmls = HTML::all();
+        if ($recherche = $request->rechercher) {
+            $javascript->where('motsCle', 'like', '%' . $recherche . '%');
+        }
         return view('admin.html', [
-            'archiveshtmls' => $archiveshtmls
+            'archiveshtmls' => $javascript->paginate(10)
         ]);
     }
 
-    // Affiche les details spécifiques d'une archive consernant Javascript
+    // Affiche les details spécifiques d'une archive consernant html
     public function archivesDetailHtml(string $slug, HTML $html) {
 
         $expectedSlug = $html->getSlug();
@@ -105,12 +120,15 @@ class AdminController extends Controller
         ]);
     }
 
-    // Affiche tous les archives consernant css
-    public function archivesCss() {
+    // Affiche tous les archives consernant css en les paginants
+    public function archivesCss(Request $request) {
+        $css = Css::query();
 
-        $archivesCss = Css::all();
+        if ($recherche = $request->rechercher) {
+            $css->where('motsCle', 'like', '%' . $recherche . '%');
+        }
         return view('admin.css', [
-            'archivesCss' => $archivesCss
+            'archivesCss' => $css->paginate(10)
         ]);
     }
 

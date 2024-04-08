@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +53,9 @@ Route::get('/css/{slug}-{css}', [AdminController::class, 'archivesDetailCss'])->
     'slug' => $slug,
     'css' => $id
 ]);
+
+//Route pour l'authentification
+Route::get('/connexion', [LoginController::class, 'connexion'])->name('auth.connexion');
 
 
 

@@ -3,7 +3,7 @@
 @section('title', 'Archives de livewire')
 
 @section('content')
-    @include('admin.shared.recherche')
+    @include('admin.shared.recherche', ['action' => ''])
 
     <!-- Start Schedule Area -->
 		<section class="schedule">
@@ -32,4 +32,7 @@
 			</div>
 		</section>
 		<!--/End Start schedule Area -->
+        <div class="container my-4">
+            {{ $archivesLivewires->links() }}
+        </div>
 @endsection

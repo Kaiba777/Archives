@@ -1,0 +1,29 @@
+Dans Routes/web.php
+
+
+6.Avoir une url de ce type 127.0.0.1:8000/blog/mon-premier-article-12
+Route::get('/blog/{slug}-{id}', function(string $slug, string $id){
+	return [
+		'slug' => $slug,
+		'id' => $id
+	];
+})->where([
+	'id' => '[0-9]+',
+	'slug' => '[a-z0-9\-]+'
+]);
+
+7.Lister tous les routes
+php artisan route:list
+
+8.Nommer les routes pour les utiliser comme un chemin
+Route::get('le chemin', function(){
+	return 'Ecrire';
+})->name('Ecrire');
+En suite
+\route('nom du route')
+
+9.Regrouper plusieurs route qui commence par le même chemin et par le même name
+Route::prefix('le chemin de depart')->name('Ecrire')->group(
+	function(){
+		//Ecrire les routes
+});

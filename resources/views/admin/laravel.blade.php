@@ -3,7 +3,7 @@
 @section('title', 'Archives de laravel')
 
 @section('content')
-    @include('admin.shared.recherche')
+    @include('admin.shared.recherche', ['action' => ''])
 
     <!-- Start Schedule Area -->
 		<section class="schedule">
@@ -32,4 +32,7 @@
 			</div>
 		</section>
 		<!--/End Start schedule Area -->
+        <div class="container my-4">
+            {{ $archivesLaravels->links() }}
+        </div>
 @endsection
