@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('livewires', function (Blueprint $table) {
             $table->id();
             $table->string('motsCle');
-            $table->longText('Contenu');
+            $table->longText('Contenu 1');
+            $table->longText('Contenu 2')->nullable();
+            $table->longText('explication')->nullable();
             $table->timestamps();
         });
     }

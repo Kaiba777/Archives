@@ -1,0 +1,205 @@
+
+
+19.Différente variable
+public $todos = []; //array
+public $todos = ''; //string
+public $maxTodos = 10; //Integer ou int
+public $todos = false; //Boolean
+public $todoFilter; //Null
+
+20.Définition de propriétés
+public function mount(){
+	$this->todos = collect([]); //collection
+	$this->todos = Todos::all(); //Eloquent collection
+	$this->todos = Todos::first(); //Model
+	$this->date = new DateTime('now); //Date time
+	$this->date = new Carbon('now); //carbon
+	$this->todo = str(''); //Stringable
+}
+
+21.Afficher le nombre de caractère saisir par l'utilisateur
+Dans la vue
+<div>
+	<input type="text" wire:model="todo">
+	<h2 x-text="$wire.todo.length"></h2>
+</div>
+	ou
+<div>
+	<input type="text" wire:model="todo">
+	<h2 x-text="$wire.get('todo').length"></h2>
+</div>
+
+22.Effacer le contenu d'une variable
+<button x-on:click="$wire.todo=''">Effacer</button>
+			ou
+<button x-on:click="$wire.set('todo','')">Effacer</button>
+	Mais elle envoie une requête réseau
+			ou
+<button x-on:click="$wire.set('todo','',false)">Effacer</button>
+
+23.Pour une question de sécurité
+	.Autoriser la saisir
+Demander une autorisation pour modifier un article
+public function update(){
+	$post = Post::findOrFail($this->id);
+	$this->authorize('update', $post);
+	$post->update(//Instruction);
+}
+
+	.Verrouiller la propriété
+	#[Locked]
+	public $id;
+
+24.Pour une question de sécurité cacher le nom de class d'un modèle
+Dans AppServiceProvider
+use Illuminate\Database\Eloquent\Relations\Relation;
+public function boot(){
+	Relation::morphMap([
+		'post' => 'App\Models\Post'
+	]);
+}
+
+ Cas des Actions
+
+25.Faire des mis à jour sur le réseau
+<button type="button" wire:click="$refresh">Ecrire</button>
+			ou
+<button type="button" wire:click="$commit">Ecrire</button>
+
+26.Confirmer une action
+<button type="button" wire:click="delete" wire:confirm="Voulez-vous vraiment supprimer ce post">Ecrire</button>
+
+27.Quelques action
+wire:click		Déclenché lorsqu'un élément est cliqué
+wire:submit		Déclenché lorsqu'un formulaire est soumis
+wire:keydown		Déclenché lorsqu'une touche est enfoncé
+wire:keyup		Déclenché lorsqu'une touche est relâchée
+wire:mouseenter		Déclenché lorsque la souris entre dans un élément
+wire:*			Le text qui suit wire: sera utilisé comme nom d'évenement de l'auditeur
+
+28.Effectuer des recherches lorsque l'utilisateur click sur l'input après avoir saisie
+<input wire:model="query" wire.keydown.enter="searchPosts">
+
+29.Ecouter la Enter touche lorsque la shift touche est enfoncée
+<input wire:keydown.shift.enter="//Ecrire">
+
+.shift				changement
+.enter				entrer
+.space				Espace
+.ctrl				Ctrl
+.cmd				Commande
+.meta				Cmd sur Mac, touche windows
+.alt				Alt
+.up				Flèche vers le haut
+.down				Flèche vers le bas
+.left				Flèche vers la gauche
+.right				Flèche vers la droite
+.escape				S'échapper
+.tab				Languette
+.caps-lock			Verrouillage des Majuscules
+.equal				=
+.period				.
+.slash				/
+
+30. Pour ne pas que l'utilisateur clic plusieurs fois pour soumettre un formulaire due à une mauvaise connection
+<div>
+	<form wire:submit="save">
+		//Instruction
+		<button type="submit">Sauvegarder</button>
+		<span wire:loading>En cours...</span>
+	</form>
+</div>
+
+31.Mettre une action avec une fonction js
+Dans la class
+use Livewire\Attributes\JS;
+public $query = '';
+#[JS]
+public function resetQuery(){
+	return <<< 'JS'
+		$wire.query = '';
+	JS;
+}
+Dans la vue
+<div>
+	<input wire:model.live="query">
+	<button wire:click="resetQuery">Ecrire</button>
+</div>
+Elle n'envoie pas de requête au serveur
+
+32.Declencher une alerte avec du code js
+public $title = '';
+public function save(){
+	//Instruction
+	$this->js("alert('Post saved!')");
+}
+
+33.Basculer la valeur d'une propriété boolean
+<button wire:click="$toggle('sortAsc')"></button>
+
+34.Pour permettre à l'Admin de supprimer un post et la sécuriser
+Dans une fonction
+if(!Auth::user()->isAdmin){
+	abort(403);
+}
+
+35.Sécuriser une fonction assez sensible
+Remplacer public par protected ou private
+
+Cas des formulaires
+
+36.Ajouter des règles de validation sur un formulaire
+Dans la class
+use Livewire\Attributes\Validate;
+#[Validate('required')]
+public $title = '';
+public function save() {
+	$this->validate();
+	//Instruction
+}
+Dans la vue
+<div>
+	<form wire:submit='save'>
+		//Input
+		<div>
+			@error('title')
+				<span>{{ $message }}</span>
+			@enderror
+		</div>
+		//button de type submit
+	</form>
+</div>
+
+37.Créer un formulaire grâce au terminal et l'appeler dans la class voulue
+php artisan livewire:form NomDuForm: PostForm
+Mettre dans cette class tous les variables et règle de validation
+#[Validate('required|min:5')]
+public $title = '';
+
+Puis dans la class voulue
+public PostForm $form
+public function save(){
+	$this->validate();
+	Post::create(
+		$this->form->all()
+	);
+	return $this->redirect('/posts');
+}
+Dans notre vue
+<form>
+//Input ajouter wire:model="form.title"
+//Ajouter le message d'erreur @error('form.title')-----
+</form>
+
+38.Mettre une fonction dans le formulaire créer par le terminal
+#[Validate('required|min:5')]
+public $title = '';
+public function store(){
+	$this->validate();
+	Post::create($this->all());
+}
+Puis dans la class voulue
+public PostForm $form;
+public function save(){
+	$this->form->store();
+} 

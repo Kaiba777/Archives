@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('javascripts', function (Blueprint $table) {
             $table->id();
             $table->string('motCle');
-            $table->longText('Contenu');
+            $table->longText('Contenu 1');
+            $table->longText('Contenu 2')->nullable();
+            $table->longText('explication')->nullable();
             $table->timestamps();
         });
     }

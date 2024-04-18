@@ -68,32 +68,45 @@ class LaravelSeeder extends Seeder
         );
         Laravel::create(
             [
-                'motsCle' => "",
-                'Contenu 1' => "",
+                'motsCle' => "Avoir une url de ce type 127.0.0.1:8000/blog/mon-premier-article-12",
+                'Contenu 1' => "Route::get('/blog/{slug}-{id}', function(string $slug, string $id){
+                    return [
+                        'slug' => $slug,
+                        'id' => $id
+                    ];
+                })->where([
+                    'id' => '[0-9]+',
+                    'slug' => '[a-z0-9\-]+'
+                ]);",
                 'Contenu 2' => "",
                 'explication' => ""
             ]
         );
         Laravel::create(
             [
-                'motsCle' => "",
-                'Contenu 1' => "",
+                'motsCle' => "Lister tous les routes",
+                'Contenu 1' => "php artisan route:list",
                 'Contenu 2' => "",
                 'explication' => ""
             ]
         );
         Laravel::create(
             [
-                'motsCle' => "",
-                'Contenu 1' => "",
+                'motsCle' => "Nommer une routes",
+                'Contenu 1' => "Route::get('le chemin', function(){
+                    return 'Ecrire';
+                })->name('Ecrire');",
                 'Contenu 2' => "",
                 'explication' => ""
             ]
         );
         Laravel::create(
             [
-                'motsCle' => "",
-                'Contenu 1' => "",
+                'motsCle' => "Regrouper plusieurs route qui commence par le même chemin et par le même name",
+                'Contenu 1' => "Route::prefix('le chemin de depart')->name('Ecrire')->group(
+                    function(){
+                        //Ecrire les routes
+                });",
                 'Contenu 2' => "",
                 'explication' => ""
             ]

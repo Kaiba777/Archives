@@ -30,12 +30,18 @@
         <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
         <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
         <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+            
         <div class="signin"> 
             <div class="content"> 
                 <h2>Connexion</h2> 
-                <form action="" method="post" class="form">
+                <form class="form" action="" method="POST">
+                    @csrf
                     <div class="inputBox"> 
                         <input type="text" name="name" required> <i>Nom</i> 
+
+                        @error('name')
+                            <div style="color: red">{{ $message }}</div>
+                        @enderror
                     </div> 
                     <div class="inputBox"> 
                         <input type="password" name="password" required> <i>Mot de passe</i> 
@@ -51,7 +57,6 @@
             </div> 
         </div> 
     </section> <!-- partial --> 
-
  </body>
 
 </html>

@@ -1,29 +1,13 @@
 Dans Routes/web.php
 
+10.different type de connexion a la base de donnees
+config/database.php
 
-6.Avoir une url de ce type 127.0.0.1:8000/blog/mon-premier-article-12
-Route::get('/blog/{slug}-{id}', function(string $slug, string $id){
-	return [
-		'slug' => $slug,
-		'id' => $id
-	];
-})->where([
-	'id' => '[0-9]+',
-	'slug' => '[a-z0-9\-]+'
-]);
+11.Se connecter a sa base de donnees
+Modifier le fichier '.env' de la ligne 11 a la ligne 16
 
-7.Lister tous les routes
-php artisan route:list
+12.creer une migration
+php artisan make:migration Create(NomDeLaTable)NomDeLaTable
 
-8.Nommer les routes pour les utiliser comme un chemin
-Route::get('le chemin', function(){
-	return 'Ecrire';
-})->name('Ecrire');
-En suite
-\route('nom du route')
-
-9.Regrouper plusieurs route qui commence par le même chemin et par le même name
-Route::prefix('le chemin de depart')->name('Ecrire')->group(
-	function(){
-		//Ecrire les routes
-});
+13.migrer nos migration dans la base de donnees
+php artisan migrate

@@ -48,6 +48,14 @@
 		@include('admin.layouts.partials.preloader')
 	
 		@include('admin.layouts.partials.header')
+
+		@if (session('success'))
+			<div class="d-flex justify-content-end">
+				<div class="alert alert-success text-center" style="width: 500px">
+					{{ session('success') }}
+				</div>
+			</div>	
+		@endif
 		
 		@yield('content')
 		

@@ -33,8 +33,17 @@
                     </div>
                     <div class="col-lg-2 col-12">
                         <div class="get-quote">
-                            <a href="appointment.html" class="btn">Bienvenue User</a>
+                            <a href="appointment.html" class="btn">Bienvenue @auth
+                                {{ Auth::user()->name }}
+                            @endauth</a>
                         </div>
+                    </div>
+                    <div class="col-2">
+                        <form action="{{ route('auth.deconnection') }}" method="post" class="get-quote">
+                            @method('delete')
+                            @csrf
+                            <button class="bg-danger text-white" style="width: 80px; padding: 10px;">Logout</button>
+                        </form>
                     </div>
                 </div>
             </div>
